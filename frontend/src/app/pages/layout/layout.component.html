@@ -92,15 +92,21 @@
 
     <!-- CONTENIDO CENTRAL -->
     <main class="main">
-        <header class="topbar">
-            <div class="user">
-                <span class="material-symbols-outlined">account_circle</span>
-                <span>User</span>
+    <header class="topbar">
+        <div class="user" (click)="toggleMenu()">
+            <span class="material-symbols-outlined">account_circle</span>
+            <span> {{ userName }}</span>
+
+            <div class="user-menu" *ngIf="menuOpen">
+                <div class="item">Configuración</div>
+                <div class="item" routerLink="/login" >Cerrar sesión</div>
             </div>
-        </header>
-        <section class="content">
-            <router-outlet></router-outlet>
-        </section>
-    </main>
+        </div>
+    </header>
+
+    <section class="content">
+        <router-outlet></router-outlet>
+    </section>
+</main>
 
 </div>

@@ -2,11 +2,11 @@
 
   <div class="header">
     <h3>Gestionar Participantes</h3>
-    
-   <div class="buttons-right">
-    <button class="invitar" (click)="openDlgInviteParticipant()">Invitar</button>
-    <!-- <button class="nuevo" (click)="openDlgNewParticipante()">+ Nuevo</button> -->
-  </div>
+
+    <div class="buttons-right">
+      <button class="invitar" (click)="openDlgInviteParticipant()">Invitar</button>
+      <!-- <button class="nuevo" (click)="openDlgNewParticipante()">+ Nuevo</button> -->
+    </div>
   </div>
 
   <!-- Filtros visuales -->
@@ -40,7 +40,7 @@
         <td>{{ p.proyecto }}</td>
         <td>
           <!-- <span class="material-icons editar" (click)="openDlgEditParticipante(p)">edit</span> -->
-           <span class="material-icons ver" (click)="openDlgViewParticipant(p)">visibility</span>
+          <span class="material-icons ver" (click)="openDlgViewParticipant(p)">visibility</span>
           <span class="material-icons eliminar" (click)="openDlgDeleteParticipante(p)">delete</span>
         </td>
       </tr>
